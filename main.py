@@ -58,6 +58,7 @@ def health():
 @app.get("/tasks")
 def get_tasks():
     return tasks
+
 @app.get("/tasks/{task_id}")
 def get_task(task_id: int):
     for task in tasks:
